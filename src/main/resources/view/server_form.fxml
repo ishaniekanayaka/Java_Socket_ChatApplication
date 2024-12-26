@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootClient" prefHeight="388.0" prefWidth="366.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Controller.ServerForm_Controller">
+    <children>
+        <ImageView fitHeight="389.0" fitWidth="366.0" pickOnBounds="true">
+            <image>
+                <Image url="@../image/img.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="129.0" layoutY="29.0" text="Server" textFill="#5b033e">
+            <font>
+                <Font name="System Bold" size="36.0" />
+            </font>
+        </Label>
+        <TextArea fx:id="clientTextArea" layoutX="33.0" layoutY="95.0" opacity="0.95" prefHeight="198.0" prefWidth="298.0" />
+        <TextField fx:id="clientTextField" layoutX="34.0" layoutY="323.0" opacity="0.94" prefHeight="26.0" prefWidth="257.0" />
+        <JFXButton fx:id="btnSend" layoutX="285.0" layoutY="323.0" onAction="#btnSendOnAction" style="-fx-background-color: #4b1246;" text="SEND" textFill="WHITE" />
+    </children>
+</AnchorPane>
